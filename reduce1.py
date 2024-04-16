@@ -6,11 +6,13 @@ factorial of that number.
 
 from functools import reduce
 
+
 def calculate_factorial(num):
     '''Function to calculate factorial of a number'''
-    nums = list(range(1,num+1))
+    nums = list(range(1, num+1))
     return reduce(lambda x, y: x * y, nums)
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     num = int(input("Enter a number: "))
-    print("Factorial: ",calculate_factorial(num))
+    print("Factorial: ", calculate_factorial(num))

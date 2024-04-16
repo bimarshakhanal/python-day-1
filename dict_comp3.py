@@ -5,13 +5,15 @@ comprehension to represent the ASCII values of lowercase alphabets
 corresponding ASCII values.
 '''
 
-def get_ASCII(alphas):
+
+def get_ascii(chars):
     '''Function to create dictionary of alphabets-ASCII pairs.'''
 
-    return {alpha:ord(alpha) for alpha in alphas }
+    return {alpha: ord(alpha) for alpha in chars}
 
-if __name__=="__main__":
-    #read input from user
+
+if __name__ == "__main__":
+    # read input from user
     alphas = input("Enter alphabets: ").split()
-    
-    print("Dictionary of ASCII values: ",get_ASCII(alphas))
+
+    print("Dictionary of ASCII values: ", get_ascii(alphas))
